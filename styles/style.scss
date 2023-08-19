@@ -1,0 +1,51 @@
+//Colors
+
+//Primary
+$Purple: hsl(259, 100%, 65%);
+$LightRed: hsl(0, 100%, 67%);
+
+//Neutral
+$White: hsl(0, 0%, 100%);
+$OffWhite: hsl(0, 0%, 94%);
+$LightGrey: hsl(0, 0%, 86%);
+$SmokeyGrey: hsl(0, 1%, 44%);
+$OffBlack: hsl(0, 0%, 8%);
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: $OffWhite;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+main {
+    background-color: $White;
+    max-width: 55rem;
+    width: 100%;
+    border-radius: 30px;
+    padding: 2.5rem 2.5rem;
+}
+
+.form {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 3rem;
+
+    &__scheme {
+        display: flex;
+        flex-direction: column;
+    }
+}
