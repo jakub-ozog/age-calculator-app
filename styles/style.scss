@@ -32,7 +32,7 @@ body {
 
 main {
     background-color: $White;
-    max-width: 55rem;
+    max-width: 49rem;
     width: 100%;
     border-radius: 30px;
     padding: 2.5rem 2.5rem;
@@ -42,10 +42,70 @@ main {
     display: flex;
     justify-content: left;
     align-items: center;
-    gap: 3rem;
 
     &__scheme {
         display: flex;
         flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+    label {
+        color: $SmokeyGrey;
+        font-size: .75rem;
+        letter-spacing: 3px;
+        font-weight: 400;
+    }
+
+
+    input {
+        color: $OffBlack;
+        padding: 1rem 1rem;
+        border: 1px solid $LightGrey;
+        border-radius: 5px;
+        width: 80%;
+
+        &::placeholder {
+            color: $SmokeyGrey;
+            font-size: 1.25rem;
+        }
+    }
+}
+
+.submit {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    &__greyBar {
+        width: 100%;
+        height: 1px;
+        background-color: $LightGrey;
+    }
+
+    &__submitRow {
+        position: relative;
+    }
+
+    button {
+        background: #854dff;
+        outline: none;
+        padding: 1rem 1rem;
+        border-radius: 50%;
+        box-shadow: none;
+        border: none;
+
+        img {
+         height: 35px;
+        }
+    }
+}
+
+.result {
+    p {
+        font-size: 64px;
+        margin-top: .25rem;
+        margin-bottom: .25rem;
+        font-weight: 700;
+        font-style: italic;
     }
 }
