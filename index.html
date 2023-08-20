@@ -30,31 +30,55 @@
     <div class="container">
       <main>
         <section>
-          <form action="/submit" id="myForm" method="post" class="form">  
+          <form action="/submit" id="myForm" method="post" class="form">
             <div class="form__scheme">
               <label for="day">DAY</label>
-              <input type="number" min="1" max="31" name="day" id="dayInput" required />
+              <input
+                type="text"
+                name="day"
+                id="dayInput"
+                required
+                placeholder="DD"
+              />
             </div>
 
             <div class="form__scheme">
               <label for="month">MONTH</label>
-              <input type="text" min="1" max="12" name="month" id="monthInput" required />
+              <input
+                type="text"
+                min="1"
+                max="12"
+                name="month"
+                id="monthInput"
+                placeholder="MM"
+                required
+              />
             </div>
 
             <div class="form__scheme">
               <label for="year">YEAR</label>
-              <input type="text" min="1900" max="2022" name="year" id="yearInput" required />
+              <input
+                type="text"
+                min="1900"
+                max="2022"
+                name="year"
+                id="yearInput"
+                placeholder="YYYY"
+                required
+              />
             </div>
           </form>
-          <button type="submit" id="myForm" role="button" class="submitBtn">SUBMIT</button>
-
+          <button type="submit" id="myForm" role="button" class="submitBtn">
+            SUBMIT
+          </button>
         </section>
-         
+
         <section class="result">
-          <p class="result__timeDiff"></p>
-          <p><span></span>-- years</p>
-          <p><span></span>-- months</p>
-          <p><span></span>-- days</p>
+
+        <p><span class="result__dateGeneral">--</span> years</p>
+          <p><span class="result__yearDiff">--</span> years</p>
+          <p><span class="result__monthDiff">--</span> months</p>
+          <p><span class="result__dayDiff">--</span> days</p>
         </section>
       </main>
     </div>
